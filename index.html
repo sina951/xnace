@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- main css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="css/all.css">
+  <title>Xn'Ace Elite</title>
+  <style>
+  </style>
+</head>
+<body>
+  <!-- icons -->
+  <!--end of icons icons -->
+  <!-- header -->
+  <header id="header">
+  <!-- navbar  -->
+    <nav class="navbar navbar-expand-lg px-4">
+          <a href="#" class="navbar-brand">
+           <!-- <img src="img/logo.svg" alt="main icon"> -->
+           <img src="img/PayExjpeg.jpg" alt="main icon">
+          </a>
+           <!-- button toggles side menu(our span) on click -->
+           <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
+             <span class="toggler-icon">
+               <!-- this button becomes visible on smaller screen -->
+               <i class="fas fa-bars"></i>
+             </span>
+           </button>
+           <!-- div with links visible on small screens, imp id="myNavbar hs to match above data target -->
+           <div class="collapse navbar-collapse" id="myNavbar">
+             <ul class="navbar-nav text-capitalize mx-auto">
+               <li class="nav-item active">
+                 <a href="#header" class="nav-link">home</a>
+               </li>
+               <li class="nav-item active">
+                 <a href="#about" class="nav-link">who are we?</a>
+               </li>
+               <li class="nav-item active">
+                 <a href="#services" class="nav-link">services</a>
+               </li>
+               <li class="nav-item active">
+                 <a href="#store" class="nav-link">products</a>
+               </li>
+               <li class="nav-item active">
+                 <a href="#contact" class="nav-link">contact</a>
+               </li>
+             </ul>
+             <!-- here we can maybe put member log in/reviews/brainstorm :?? only seeable(thanks to d-none) except appear only on large screens(d-lg-flex) flex means we gonna make use of flexbox -->
+             <div class="nav-info-items d-none d-lg-flex">
+               <!-- single info -->
+               <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
+                <span class="cart-info__icon mr-lg-3"><i class="fas fa-shopping-cart"></i></span>
+                <p class="mb-0 text-capitalize"><span id="item-count">2 </span> items - $<span class="item-total">107</span></p>
+              </div>
+              <!-- end of single info -->
+             </div>
+           </div>
+      </nav>
+    <!-- end of nav -->
+
+    <!-- hero content -->
+    <div class="container-fluid">
+      <div class="row max-height justify-content-center align-items-center">
+        
+        <div class="col-10 mx-auto banner text-center">
+          <h1 class="text-capitalize">WELCOME TO</h1>
+          <strong class="banner-title-hero">XN'ACE ELITE</strong>
+          <a href="#store" class="btn banner-link text-uppercase my-2 mx-auto">explore</a>
+        </div>
+    <!-- end of hero content -->
+
+    <!-- cart -->
+        <div class="cart" id="cart">
+
+          <!-- cart item (copy paste from here for duplicate items) has to be within cart div! -->
+          <div class="cart-item d-flex justify-content-between text-capitalize my-3">
+            <!-- cart image -->
+            <img src="/img-cart/man-front.jpg" class="img-fluid rounded" id="item-img" alt="">
+            <!-- cart inner items -->
+            <div class="item-text">
+              <p id="cart-item-title" class="font-weight-bold mb-0">cart item</p>
+              <span>$</span>
+              <span id="cart-item-price" class="cart-item-price mb-0">43.50</span>
+            </div>
+            <!-- cart remove button -->
+            <a href="#" id="cart-item-remove" class="cart-item-remove">
+              <i class="fas fa-times-circle"></i> 
+            </a>
+          </div>
+          <!-- end cart item -->
+
+          <!-- cart item (copy paste from here for duplicate items) has to be within cart div! -->
+          <div class="cart-item d-flex justify-content-between text-capitalize my-3">
+            <!-- cart image -->
+            <img src="/img-cart/woman-front.jpg" class="img-fluid rounded" id="item-img" alt="">
+            <!-- cart inner items -->
+            <div class="item-text">
+              <p id="cart-item-title" class="font-weight-bold mb-0">cart item</p>
+              <span>$</span>
+              <span id="cart-item-price" class="cart-item-price mb-0">63.50</span>
+            </div>
+            <!-- cart remove button -->
+            <a href="#" id="cart-item-remove" class="cart-item-remove">
+              <i class="fas fa-times-circle"></i> 
+            </a>  
+          </div>
+          <!-- end cart item -->
+
+        <!-- summary box -->
+        <div class="cart-total-container d-flex justify-content-around text-capitalize mt-5">
+          <h5>total</h5>
+          <h5>$ <strong id="cart-total" class="font-weight-bold">107</strong></h5>
+        </div>
+        <!-- end of summary box -->
+        <!-- cart buttons -->
+        <div class="cart-buttons-container d-flex justify-content-between mt-3">
+          <a href="#" id="clear-cart" class="btn btn-clear-cart text-uppercase">clear cart</a>
+          <a href="#" id="clear-cart" class="btn btn-checkout text-uppercase">checkout</a>
+        </div>
+        <!-- end of cart buttons -->
+      </div>
+    <!-- end cart ends from the div above  -->
+      </div>
+    </div>
+  </header>
+  <!-- end of header -->
+
+  <!-- about us -->
+  <section class="about py-5" id="about">
+    <div class="container">
+      <!-- row by default is a flexbox so we can align-self-center -->
+      <div class="row">
+        <div class="col-10 mx-auto col-md-6 my-5">
+          <h1 class="text-capitalize">our <strong class="banner-title "> mission</strong></h1>
+          <p class="my-4 text-muted w-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, aliquam voluptas
+            beatae vitae expedita consectetur nesciunt quia deserunt asperiores facere fuga dicta fugiat corrupti et omnis
+            porro at dolorum! Ad!</p>
+          <a href="#" class="btn btn-outline-secondary btn-store text-uppercase ">explore</a>
+        </div>
+        <div class="col-10 mx-auto col-md-6 align-self-center my-5">
+          <div class="about-img__container">
+            <img src="./img/DSC_0785.png" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of about us -->
+
+<!-- services -->
+<section class="about py-5" id="services">
+  <div class="container">
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+      <h1 class="text-capitalize"><strong class="banner-title ">services</strong></h1>
+      <h2 class="my-4 text-muted ">Get inspired by our athletes</h2>
+    </div>
+    
+    <div class="card-deck mb-3 text-center">
+      
+      <div class="card mb-4 shadow-sm ">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal">Athlete 1</h4>
+        </div>
+        <div class="card-body">
+          <img src="/img/TEST ATHLETE 1.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in facilisis libero, eget congue lorem. Nulla non ligula eget erat aliquam lacinia a eget felis.</p>
+          </div>
+          <button type="button" class="btn btn-services btn-lg btn-block btn-primary">Contact</button>
+        </div>
+      </div>
+
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal">Athlete 2</h4>
+        </div>
+        <div class="card-body">
+          <img src="/img/TEST ATHLETE 2.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in facilisis libero, eget congue lorem. Nulla non ligula eget erat aliquam lacinia a eget felis.</p>
+          </div>
+          <button type="button" class="btn btn-services btn-lg btn-block btn-primary">Contact</button>
+        </div>
+      </div>
+
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal">Athlete 2</h4>
+        </div>
+        <div class="card-body">
+          <img src="/img/TEST ATHLETE 3.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in facilisis libero, eget congue lorem. Nulla non ligula eget erat aliquam lacinia a eget felis.</p>
+          </div>
+          <button type="button" class="btn btn-services btn-lg btn-block btn-primary">Contact</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of services -->
+
+  <!-- reviews slider -->
+  <section class="slider-section">
+    <div class="reviews-title">
+      <h2>reviews</h2>
+    </div>
+    
+    <div class="slide-container">
+      <!-- single slide -->
+      <article class="review">
+        <div class="img-container-style">
+          <img  
+          src="https://res.cloudinary.com/diqqf3eq2/image/upload/c_scale,w_200/v1595959121/person-1_aufeoq.jpg"
+          class="img-container-original"
+          id="person-img"
+          alt="peter doe"
+        />
+        </div>
+        <h4 id="author">my name</h4>
+        <p id="job">my job</p>
+        <p id="info">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quo
+          eius recusandae officia voluptas sint deserunt dicta nihil nam
+          omnis?
+        </p>
+        <div class="quote-icon">
+          <i class="fas fa-ellipsis-h fa-spin"></i>
+        </div>
+      </article>
+      <!-- end of single slide -->
+    </div>
+
+    <!-- buttons -->
+    <!-- prev btn -->
+    <button class="prev-btn btn-slider">
+      <i class="fas fa-arrow-left"></i>
+    </button>
+    <!-- next button -->
+    <button class="next-btn btn-slider">
+      <i class="fa fa-arrow-right"></i>
+    </button>
+  </section>
+  <!-- end of reviews slider -->
+
+  <!-- store section -->
+  <section id="store" class="store py-5">
+    <class class="container">
+    <!-- section title -->
+    <div class="row">
+      <div class="col-10 mx-auto col-sm-6 text-center">
+        <h1 class="text-capitalize"><strong class="banner-title ">products</strong></h1>
+      </div>
+    </div>
+    <!-- end of section title -->
+    <!-- search box -->
+      <div class="row">
+        <div class="col-10 mx-auto col-md-6">
+          <form>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend ">
+                <span class="input-group-text search-box" id="search-icon"><i class="fas fa-search"></i></span>
+              </div>
+              <input type="text" class="form-control" placeholder='item....' id="search-item">
+            </div>
+          </form>
+        </div>
+      </div>
+      <!--filter buttons -->
+      <div class="row">
+        <div class=" col-lg-8 mx-auto d-flex justify-content-center my-2 sortBtn flex-wrap">
+          <a href="#" class="btn btn-outline-secondary btn-store text-uppercase filter-btn m-2" data-filter="all">All</a>
+          <a href="#" class="btn btn-outline-secondary btn-store text-uppercase filter-btn m-2" data-filter="clothes">Clothes</a>
+          <a href="#" class="btn btn-outline-secondary btn-store text-uppercase filter-btn m-2" data-filter="equipment">Training equipment</a>
+        </div>
+      </div>
+      <!--end of filter buttons -->
+      <!-- store  items-->
+      <div class="row py-2 px-5" class="store-items " id="store-items">
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-md-3 col-sm-6" data-item="top">
+          <div class="product-grid3">
+              <div class="product-image3">
+                  <a href="#">
+                      <img class="pic-1" src="/img/woman-front.jpg">
+                      <img class="pic-2" src="/img/woman-back.jpg">
+                  </a>
+                  <ul class="social">
+                      <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+                      <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                  </ul>
+                  <span class="product-new-label">New</span>
+              </div>
+              <div class="product-content">
+                  <h3 class="title"><a href="#">Women's Top</a></h3>
+                  <div class="price">$63.50<span>$75.00</span></div>
+                  <ul class="rating">
+                      <li class="fa fa-star"></li>
+                      <li class="fa fa-star"></li>
+                      <li class="fa fa-star"></li>
+                      <li class="fa fa-star disable"></li>
+                      <li class="fa fa-star disable"></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3 col-sm-6" data-item="tshirt">
+          <div class="product-grid3">
+              <div class="product-image3">
+                  <a href="#">
+                      <img class="pic-1" src="/img/man-front.jpg">
+                      <img class="pic-2" src="/img/man-back.jpg">
+                  </a>
+                  <ul class="social">
+                      <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+                      <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                  </ul>
+              </div>
+              <div class="product-content">
+                  <h3 class="title"><a href="#">Men's T-shirt</a></h3>
+                  <div class="price">$43.50</div>
+                  <ul class="rating">
+                      <li class="fa fa-star"></li>
+                      <li class="fa fa-star"></li>
+                      <li class="fa fa-star"></li>
+                      <li class="fa fa-star"></li>
+                      <li class="fa fa-star"></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3 col-sm-6" data-item="wraps">
+          <div class="product-grid3">
+              <div class="product-image3">
+                  <a href="#">
+                      <img class="pic-1" src="/img/Xnace-Elite-Amazon4.jpg">
+                      <img class="pic-2" src="/img/Xnace-Elite-Amazon5.jpg">
+                  </a>
+                  <ul class="social">
+                      <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+                      <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                  </ul>
+                  <span class="product-new-label">New</span>
+              </div>
+              <div class="product-content">
+                  <h3 class="title"><a href="#">Hand Wraps</a></h3>
+                  <div class="price">$63.50<span>$75.00</span></div>
+                  <ul class="rating">
+                      <li class="fa fa-star"></li>
+                      <li class="fa fa-star"></li>
+                      <li class="fa fa-star"></li>
+                      <li class="fa fa-star disable"></li>
+                      <li class="fa fa-star disable"></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3 col-sm-6" data-item="kit">
+          <div class="product-grid3">
+              <div class="product-image3">
+                  <a href="#">
+                      <img class="pic-1" src="/img/Xnace-Elite-Amazon6.jpg">
+                      <img class="pic-2" src="/img/Xnace-Elite-Amazon7.jpg">
+                  </a>
+                  <ul class="social">
+                      <li><a href="#"><i class="fa fa-shopping-bag"></i></a></li>
+                      <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                  </ul>
+                  <span class="product-new-label">New</span>
+              </div>
+              <div class="product-content">
+                  <h3 class="title"><a href="#">Training Kit</a></h3>
+                  <div class="price">$63.50<span>$75.00</span></div>
+                  <ul class="rating">
+                      <li class="fa fa-star"></li>
+                      <li class="fa fa-star"></li>
+                      <li class="fa fa-star"></li>
+                      <li class="fa fa-star disable"></li>
+                      <li class="fa fa-star disable"></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- end of single item -->
+
+<!-- services/social links -->
+<section class="social-links pb-0 pt-4" id="social-links">
+  <div class="box">
+    <div class="container">
+       <div class="row">
+  
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <div class="box-part text-center">
+                        
+                        <i class="fab fa-instagram fa-3x fa-social" aria-hidden="true"></i>
+                        
+            <div class="title">
+              <h4>Instagram</h4>
+            </div>                   
+            <div class="text-social">
+              <span class="span-social">Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
+            </div>                  
+            <a href="#" class="a-social"><i class="far fa-arrow-alt-circle-right"></i> Learn More</a>                   
+           </div>
+        </div>	 
+         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">       
+          <div class="box-part text-center">  
+  
+                        <i class="fab fa-twitter fa-3x fa-social" aria-hidden="true"></i> 
+  
+            <div class="title">
+              <h4>Twitter</h4>
+            </div>               
+            <div class="text-social">
+              <span class="span-social">Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
+            </div>            
+            <a href="#" class="a-social"><i class="far fa-arrow-alt-circle-right"></i> Learn More</a>            
+           </div>
+        </div>
+         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">           
+          <div class="box-part text-center">
+                        
+                        <i class="fab fa-facebook fa-3x fa-social" aria-hidden="true"></i>
+                      
+            <div class="title">
+              <h4>Facebook</h4>
+            </div>                     
+            <div class="text-social">
+              <span class="span-social">Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
+            </div>                   
+            <a href="#" class="a-social"><i class="far fa-arrow-alt-circle-right"></i> Learn More</a>                    
+           </div>
+        </div>	 
+    </div>		
+    </div>
+  </div>
+  </section>
+<!-- end of services/social links -->
+
+<!--Bottom Footer-->
+<div class="bottom section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div class="copyright">
+          <p>© <span>2020</span> <a href="#" class="transition">Xn'Ace Elite</a> All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Bottom Footer-->
+
+
+  <!-- jquery -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- script js -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>
